@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="books, poetry">
+    <meta name="discription" content="Это сайт со стихами">
+    <title>Блок</title> <!-- название страницы -->
+    <link type="image/png" sizes="32x32" rel="icon" href="images/b.png">
+    <meta name="viewport" content="width=device-width">
+
+
+    <link rel="stylesheet" href="css/Blok.css">
+</head>
+
+<body>
+<!--Обёртка для скрытия бургер-меню-->
+<div class="body-wrapper">
+    <header class="header" id="topNav">
+        <!--Верхнее меню с информацией-->
+        <div class="super-navbar">
+            <div class="container">
+                <!--Верхнее меню с информацией - адрес-->
+                <a class="map" href="index.html">
+                    <i class="fa fa-map"></i>
+                    Москва
+                </a>
+                <!--Верхнее меню с информацией - поиск-->
+                <form class="input">
+                    <input autocomplete="off" class="search-input" id="searchInput" name="searchInput" type="text" placeholder="Поиск по названию" required/>
+                    <label class="search-label" for="searchInput">
+                        <i class="fa fa-search"></i>
+                    </label>
+                </form>
+                <!--Верхнее меню с информацией - телефон-->
+                <a rel="nofollow" class="phone" href="tel:+74993221524">+7 (977) 578-52-58</a>
+                <!--Верхнее меню с информацией - whatsapp-->
+                <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+">
+                    <img width="16px" height="16px" alt="иконка whatsapp" src="images/whatsapp.svg"/>
+                </a>
+            </div>
+        </div>
+        <!--Основное меню с информацией-->
+        <nav class="nav">
+            <div class="all-menu">
+                <!--Логотип-->
+                <div class="for-margin">
+                    <a href="#" class="logo">
+                        <img class="logo-img" src="images/b.png" width="30px" height="30px">
+                    </a>
+                </div>
+                <!--Список меню-->
+                <ul class="menu" id="menu">
+                    <li id="forth">
+                        <a href="index.html"> Популярные поэты</a>
+                    </li>
+                    <li id="second">
+                        <a href="index.html"> Лучшее</a>
+                    </li>
+                    <li id="third">
+                        <a href="index.html"> Классика</a>
+                    </li>
+                    <li id="fifth">
+                        <a href="index.html"> Регистрация</a>
+                    </li>
+                </ul>
+                <!--Кнопка для бургер меню-->
+                <button class="menu-burger" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Закладка-->
+        <div class="notification">
+            <!--Иконка закладки-->
+            <div class="notification-icon">
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+            </div>
+            <!--Список ссылок в закладке-->
+            <div class="notification-dropdown">
+                <ul>
+                    <li><a id="per" href="lastbook.html">Последний стих</a></li>
+                    <li><a id="vtor" href="favorites.html">Избранное</a></li>
+                    <li><a id="tret" onclick="clearFavorites()">Удалить всё</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="blocks">
+            <div class="img_wrapper">
+                <div class="img" style="background-image: url('images/3.jpeg'); background-position: center"></div>
+            </div>
+            <p class="text float"><span class="M">Александр Блок</span> — написал свои первые стихи еще до гимназии. <span class="hide">В 14 лет он издавал рукописный журнал «Вестник», в 17 — ставил пьесы на сцене домашнего театра и играл в них, в 22 — опубликовал свои стихотворения в альманахе Валерия Брюсова «Северные цветы».</span></p>
+        </section>
+
+        <div class="list">
+            <h1 class="h2">Список произведений</h1>
+            <div class='bg-dark'>
+                <div id='shelf'>
+                    <div class='book-bg graphic' id="num18">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add18">Девушка пела…</h1>
+                            <div class='contents'>
+                                <div id='back0'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Девушка пела…</h3>
+                                        <pre class='text1 p18'>&emsp;
+Девушка пела в церковном хоре
+О всех усталых в чужом краю,
+О всех кораблях, ушедших в море,
+О всех, забывших радость свою.
+
+Так пел ее голос, летящий в купол,
+И луч сиял на белом плече,
+И каждый из мрака смотрел и слушал,
+Как белое платье пело в луче.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q18'>
+И всем казалось, что радость будет,
+Что в тихой заводи все корабли,
+Что на чужбине усталые люди
+Светлую жизнь себе обрели.
+
+И голос был сладок, и луч был тонок,
+И только высоко, у царских врат,
+Причастный тайнам, — плакал ребенок
+О том, что никто не придет назад.
+
+1905 г.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add18')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg data' id="num19">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add19">Ночь, улица…</h1>
+                            <div class='contents'>
+                                <div id='back1'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Ночь, улица…</h3>
+                                        <pre class='text1 p19'>&emsp;
+Ночь, улица, фонарь, аптека,
+Бессмысленный и тусклый свет.
+Живи еще хоть четверть века —
+Всё будет так. Исхода нет.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q19'>
+Умрёшь — начнёшь опять сначала
+И повторится всё, как встарь:
+Ночь, ледяная рябь канала,
+Аптека, улица, фонарь.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add19')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg photo' id="num20">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add20">Россия</h1>
+                            <div class='contents'>
+                                <div id='back2'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Россия</h3>
+                                        <pre class='text1 p20'>&emsp;
+Опять, как в годы золотые,
+Три стертых треплются шлеи,
+И вязнут спицы расписные
+В расхлябанные колеи…
+Россия, нищая Россия,
+Мне избы серые твои,
+Твои мне песни ветровые, —
+Как слезы первые любви!
+Тебя жалеть я не умею
+И крест свой бережно несу…
+Какому хочешь чародею
+Отдай разбойную красу!
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q20'>
+Пускай заманит и обманет, —
+Не пропадешь, не сгинешь ты,
+И лишь забота затуманит
+Твои прекрасные черты…
+Ну что ж? Одной заботой боле —
+Одной слезой река шумней
+А ты все та же — лес, да поле,
+Да плат узорный до бровей…
+И невозможное возможно,
+Дорога долгая легка,
+Когда блеснет в дали дорожной
+Мгновенный взор из-под платка,
+Когда звенит тоской острожной
+Глухая песня ямщика!..
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add20')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg landscape' id="num21">
+                        <div class='book flex-column'>
+                            <div class='book-shading'></div>
+                            <h1 id="add21">Одной тебе…</h1>
+                            <div class='contents'>
+                                <div id='back3'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Одной тебе, тебе одной…</h3>
+                                        <pre class='text1 p21'>&emsp;
+Одной тебе, тебе одной,
+Любви и счастия царице,
+Тебе прекрасной, молодой
+Все жизни лучшие страницы!
+
+Ни верный друг, ни брат, ни мать
+Не знают друга, брата, сына,
+Одна лишь можешь ты понять
+Души неясную кручину.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q21'>
+Ты, ты одна, о, страсть моя,
+Моя любовь, моя царица!
+Во тьме ночной душа твоя
+Блестит, как дальняя зарница.
+
+1898 г.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add21')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg writing' id="num22">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add22">О, я хочу…</h1>
+                            <div class='contents'>
+                                <div id='back4'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>О, я хочу безумно жить…</h3>
+                                        <pre class='text1 p22'>&emsp;
+О, я хочу безумно жить:
+Всё сущее — увековечить,
+Безличное — вочеловечить,
+Несбывшееся — воплотить!
+
+Пусть душит жизни сон тяжелый,
+Пусть задыхаюсь в этом сне, —
+Быть может, юноша веселый
+В грядущем скажет обо мне:
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q22'>
+Простим угрюмство — разве это
+Сокрытый двигатель его?
+Он весь — дитя добра и света,
+Он весь — свободы торжество!
+
+5 февраля 1914
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add22')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg web' id="num23">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add23">Ветхая избушка</h1>
+                            <div class='contents'>
+                                <div id='back5'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Ветхая избушка</h3>
+                                        <pre class='text1 p23'>&emsp;
+Ветхая избушка
+Вся в снегу стоит.
+Бабушка-старушка
+Из окна глядит.
+Внукам-шалунишкам
+По колено снег.
+Весел ребятишкам
+Быстрых санок бег…
+Бегают, смеются,
+Лепят снежный дом,
+Звонко раздаются
+Голоса кругом…
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q23'>
+Голоса кругом…
+В снежном доме будет
+Резвая игра…
+Пальчики застудят, —
+По домам пора!
+Завтра выпьют чаю,
+Глянут из окна —
+Ан уж дом растаял,
+На дворе — весна!
+
+1906 г.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add23')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <a class="back" href="index.html"><i class="fa fa-reply"><span class="t">Вернуться назад</span></i></a>
+    </main>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <h3>Poetry Librery</h3>
+        <p>Спасибо за то, что пользуетесь нашим сайтом! Благодаря Вам мы становимся лучше.
+        </p>
+        <ul class="socials">
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy;2023 PoetryLibrery. designed by <span>Mukhin Sergey</span></p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="js/Blok.js"></script>
+</body>
+</html>
+
+
+

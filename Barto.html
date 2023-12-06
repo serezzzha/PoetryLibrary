@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="books, poetry">
+    <meta name="discription" content="Это сайт со стихами">
+    <title>Барто</title> <!-- название страницы -->
+    <link type="image/png" sizes="32x32" rel="icon" href="images/b.png">
+    <meta name="viewport" content="width=device-width">
+
+
+    <link rel="stylesheet" href="css/Barto.css">
+</head>
+
+<body>
+<!--Обёртка для скрытия бургер-меню-->
+<div class="body-wrapper">
+    <header class="header" id="topNav">
+        <!--Верхнее меню с информацией-->
+        <div class="super-navbar">
+            <div class="container">
+                <!--Верхнее меню с информацией - адрес-->
+                <a class="map" href="index.html">
+                    <i class="fa fa-map"></i>
+                    Москва
+                </a>
+                <!--Верхнее меню с информацией - поиск-->
+                <form class="input">
+                    <input autocomplete="off" class="search-input" id="searchInput" name="searchInput" type="text" placeholder="Поиск по названию" required/>
+                    <label class="search-label" for="searchInput">
+                        <i class="fa fa-search"></i>
+                    </label>
+                </form>
+                <!--Верхнее меню с информацией - телефон-->
+                <a rel="nofollow" class="phone" href="tel:+74993221524">+7 (977) 578-52-58</a>
+                <!--Верхнее меню с информацией - whatsapp-->
+                <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+">
+                    <img width="16px" height="16px" alt="иконка whatsapp" src="images/whatsapp.svg"/>
+                </a>
+            </div>
+        </div>
+        <!--Основное меню с информацией-->
+        <nav class="nav">
+            <div class="all-menu">
+                <!--Логотип-->
+                <div class="for-margin">
+                    <a href="#" class="logo">
+                        <img class="logo-img" src="images/b.png" width="30px" height="30px">
+                    </a>
+                </div>
+                <!--Список меню-->
+                <ul class="menu" id="menu">
+                    <li id="forth">
+                        <a href="index.html"> Популярные поэты</a>
+                    </li>
+                    <li id="second">
+                        <a href="index.html"> Лучшее</a>
+                    </li>
+                    <li id="third">
+                        <a href="index.html"> Классика</a>
+                    </li>
+                    <li id="fifth">
+                        <a href="index.html"> Регистрация</a>
+                    </li>
+                </ul>
+                <!--Кнопка для бургер меню-->
+                <button class="menu-burger" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Закладка-->
+        <div class="notification">
+            <!--Иконка закладки-->
+            <div class="notification-icon">
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+            </div>
+            <!--Список ссылок в закладке-->
+            <div class="notification-dropdown">
+                <ul>
+                    <li><a id="per" href="lastbook.html">Последний стих</a></li>
+                    <li><a id="vtor" href="favorites.html">Избранное</a></li>
+                    <li><a id="tret" onclick="clearFavorites()">Удалить всё</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="blocks">
+            <div class="img_wrapper">
+                <div class="img" style="background-image: url('images/8.jpeg')"></div>
+            </div>
+            <p class="text float"><span class="M">Агния Барто</span> — русская советская детская поэтесса, писательница, киносценарист, радиоведущая. <span class="hide"> Лауреат Сталинской премии второй степени (1950) и Ленинской премии (1972).</span></p>
+        </section>
+
+        <div class="list">
+            <h1 class="h2">Список произведений</h1>
+            <div class='bg-dark'>
+                <div id='shelf'>
+                    <div class='book-bg graphic' id="num12">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add12">Так на так</h1>
+                            <div class='contents'>
+                                <div id='back0'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Так на так</h3>
+                                        <pre class='text1 p12'>&emsp;
+Решили два Ивана
+Меняться без обмана.
+А что менять —
+Не в этом суть,
+Хоть что-нибудь
+На что-нибудь.
+Игрушечного зайку
+На гвоздики и гайку,
+А гвоздики и гайку
+Потом опять на зайку.
+Друзья не ищут выгод,
+Им пошуметь, попрыгать,
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q12'>
+Кричать: — Меняю кошку
+На сломанную брошку,
+А сломанную брошку
+Потом опять на кошку!
+Решили два Ивана
+Меняться без обмана.
+А что менять —
+Не в этом суть,
+Хоть что-нибудь
+На что-нибудь.
+Так целый день менялись
+И при своем остались.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add12')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg data' id="num13">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add13">Шла вчера я...</h1>
+                            <div class='contents'>
+                                <div id='back1'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Шла вчера я по Садовой</h3>
+                                        <pre class='text1 p13'>&emsp;
+Шла вчера я по Садовой,
+Так была удивлена —
+Паренек белоголовый
+Закричал мне из окна:
+
+— С добрым утром!
+С добрым утром!
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q13'>
+Я спросила: — Это мне? —
+Улыбнулся он в окне,
+Закричал еще кому-то:
+
+— С добрым утром!
+С добрым утром!
+
+Малышам и взрослым людям
+Паренек махал рукой,
+С ним теперь знакомы будем:
+Это Вовка — есть такой!
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add13')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg photo' id="num14">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add14">Помощница</h1>
+                            <div class='contents'>
+                                <div id='back2'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Помощница</h3>
+                                        <pre class='text1 p14'>&emsp;
+У Танюши дел немало,
+У Танюши много дел:
+Утром брату помогала, —
+Он с утра конфеты ел.
+
+Обещала вымыть ложки,
+Пролила столярный клей,
+Отворила дверь для кошки,
+Помогла мяукать ей.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q14'>
+Вот у Тани сколько дела:
+Таня ела, чай пила,
+Села, с мамой посидела,
+Встала, к бабушке пошла.
+
+Перед сном сказала маме:
+— Вы меня разденьте сами,
+Я устала, не могу,
+Я вам завтра помогу.
+
+1936 г.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add14')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg landscape' id="num15">
+                        <div class='book flex-column'>
+                            <div class='book-shading'></div>
+                            <h1 id="add15">Зайка</h1>
+                            <div class='contents'>
+                                <div id='back3'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Зайка</h3>
+                                        <pre class='text1 p15'>&emsp;
+Зайку бросила хозяйка —
+Под дождем остался зайка.
+Со скамейки слезть не мог,
+Весь до ниточки промок.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q15'>
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add15')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg writing' id="num16">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add16">Дело было в январе…</h1>
+                            <div class='contents'>
+                                <div id='back4'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Дело было в январе…</h3>
+                                        <pre class='text1 p16'>&emsp;
+Дело было в январе,
+Стояла елка на горе,
+А возле этой елки
+Бродили злые волки.
+Вот как-то раз,
+Ночной порой,
+Когда в лесу так тихо,
+Встречают волка под горой
+Зайчата и зайчиха.
+Кому охота в Новый год
+Попасться в лапы волку!
+Зайчата бросились вперед
+И прыгнули на елку.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q16'>
+Они прижали ушки,
+Повисли, как игрушки.
+Десять маленьких зайчат
+Висят на елке и молчат.
+Обманули волка.
+Дело было в январе, —
+Подумал он, что на горе
+Украшенная елка.
+1940 г.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add16')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg web' id="num17">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add17">Мячик</h1>
+                            <div class='contents'>
+                                <div id='back5'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Мячик (Наша Таня громко плачет)</h3>
+                                        <pre class='text1 p17'>&emsp;
+Наша Таня громко плачет:
+Уронила в речку мячик.
+— Тише, Танечка, не плачь:
+Не утонет в речке мяч.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q17'>
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add17')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <a class="back" href="index.html"><i class="fa fa-reply"><span class="t">Вернуться назад</span></i></a>
+    </main>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <h3>Poetry Librery</h3>
+        <p>Спасибо за то, что пользуетесь нашим сайтом! Благодаря Вам мы становимся лучше.
+        </p>
+        <ul class="socials">
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy;2023 PoetryLibrery. designed by <span>Mukhin Sergey</span></p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="js/Barto.js"></script>
+</body>
+</html>
+
+
+

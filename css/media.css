@@ -1,0 +1,335 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1313px) {
+    .showcase-navigation > *::before{
+        content: '';
+        background-image: url(../images/strelka.png);
+        left: 400px;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-size: cover;
+        transition: opacity .5s ease-in-out;
+        rotate: 180deg;
+    }
+
+    .showcase-navigation__next::before{
+        rotate: 360deg;
+        right: 400px;
+        left: auto;
+    }
+
+    .image:nth-child(4){
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .image:nth-child(3){
+        grid-column: span 2;
+    }
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1133px) {
+    .showcase-carousel__item{
+        height: 320px;
+    }
+    .showcase-carousel__image{
+        width: 200px;
+        height: 320px;
+    }
+
+    .showcase-navigation > *::before{
+        content: '';
+        background-image: url(../images/strelka.png);
+        left: 300px;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-size: cover;
+        transition: opacity .5s ease-in-out;
+        rotate: 180deg;
+    }
+
+    .showcase-navigation__next::before{
+        rotate: 360deg;
+        right: 300px;
+        left: auto;
+    }
+
+    .showcase-navigation > *{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        outline: none;
+        cursor: pointer;
+        top: 70%;
+    }
+
+    .image:nth-child(4){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .new-block__image2{
+        display: none;
+    }
+    .new-block__image3{
+        display: none;
+    }
+    .list2{
+        display: none;
+    }
+    .list3{
+        display: none;
+    }
+}
+
+/* md <= Large (lg) */
+@media (max-width : 953px) {
+    .showcase-carousel__item{
+        height: 320px;
+    }
+    .showcase-carousel__image{
+        width: 200px;
+        height: 320px;
+    }
+
+    .showcase-navigation > *::before{
+        content: '';
+        background-image: url(../images/strelka.png);
+        left: 200px;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-size: cover;
+        transition: opacity .5s ease-in-out;
+        rotate: 180deg;
+    }
+
+    .showcase-navigation__next::before{
+        rotate: 360deg;
+        right: 200px;
+        left: auto;
+    }
+
+    .karta{
+        padding: 20px 15% 40px 15%;
+    }
+
+    .image:nth-child(3){
+        grid-column: span 1;
+    }
+
+    .image:nth-child(4){
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .image:nth-child(7){
+        grid-column: span 1;
+    }
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 774px) {
+    .showcase-carousel__item{
+        height: 250px;
+    }
+    .showcase-carousel__image{
+        width: 150px;
+        height: 250px;
+    }
+
+    .showcase-navigation > *::before{
+        content: '';
+        background-image: url(../images/strelka.png);
+        left: 200px;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-size: cover;
+        transition: opacity .5s ease-in-out;
+        rotate: 180deg;
+    }
+
+    .showcase-navigation__next::before{
+        rotate: 360deg;
+        right: 200px;
+        left: auto;
+    }
+    .showcase-navigation > *{
+        top: 70%;
+    }
+
+    .image:nth-child(7){
+        grid-column: span 2;
+    }
+    .image:nth-child(3){
+        grid-column: span 2;
+    }
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 774px) {
+    .showcase-navigation > *::before{
+        content: '';
+        background-image: url(../images/strelka.png);
+        left: 100px;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-size: cover;
+        transition: opacity .5s ease-in-out;
+        rotate: 180deg;
+    }
+
+    .showcase-navigation__next::before{
+        rotate: 360deg;
+        right: 100px;
+        left: auto;
+    }
+
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 450px) {
+    .showcase-carousel__item{
+        height: 200px;
+    }
+    .showcase-carousel__image{
+        width: 120px;
+        height: 200px;
+    }
+
+    .showcase-navigation > *{
+        top: 60%;
+    }
+
+    .image:nth-child(7){
+        grid-column: span 2;
+    }
+
+    .new-block__image{
+        position: absolute;
+        top: 20px;
+        width: 272px;
+        height: 361px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    .new-block{
+        position: relative;
+        height: 420px;
+        overflow: hidden;
+    }
+
+    .new-block ul{
+        position: absolute;
+        top: 30px;
+        left: calc(50% - 37px - 100px);
+        font-size: 12px;
+        color: black;
+        z-index: 1;
+        list-style-type: disc;
+        max-width: 260px;
+    }
+
+    /*Заголовки секций*/
+    .h2{
+        font-size: 25px;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .sub{
+        font-size: 14px;
+    }
+    .lyrics2{
+        font-size: 10px;
+    }
+    .lyrics{
+        font-size: 10px;
+    }
+    .content {
+        font-size: 10px;
+    }
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 413px) {
+    .showcase-carousel__item{
+        height: 200px;
+    }
+    .showcase-carousel__image{
+        width: 120px;
+        height: 200px;
+    }
+
+    .showcase-navigation > *::before{
+        content: '';
+        background-image: url(../images/strelka.png);
+        left: 50px;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-size: cover;
+        transition: opacity .5s ease-in-out;
+        rotate: 180deg;
+    }
+
+    .showcase-navigation__next::before{
+        rotate: 360deg;
+        right: 50px;
+        left: auto;
+    }
+
+
+    .image:nth-child(7){
+        grid-column: span 1;
+    }
+    .image:nth-child(3){
+        grid-column: span 1;
+    }
+
+    .image:nth-child(4){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .image:nth-child(2){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .image{
+        background: var(--bg) top / cover;
+    }
+    .image:nth-child(4){
+        background-size: 70%;
+    }
+    .image:nth-child(5){
+        background-size: 70%;
+    }
+    .image:nth-child(6){
+        background-size: 70%;
+    }
+    .image:nth-child(8){
+        background-size: 70%;
+    }
+    .image:nth-child(9){
+        background-size: 70%;
+    }
+    .image:nth-child(10){
+        background-size: 70%;
+    }
+}
+

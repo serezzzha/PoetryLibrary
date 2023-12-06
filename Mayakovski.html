@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="books, poetry">
+    <meta name="discription" content="Это сайт со стихами">
+    <title>Маяковский</title> <!-- название страницы -->
+    <link type="image/png" sizes="32x32" rel="icon" href="images/b.png">
+    <meta name="viewport" content="width=device-width">
+
+
+    <link rel="stylesheet" href="css/Mayakovski.css">
+</head>
+
+<body>
+<!--Обёртка для скрытия бургер-меню-->
+<div class="body-wrapper">
+    <header class="header" id="topNav">
+        <!--Верхнее меню с информацией-->
+        <div class="super-navbar">
+            <div class="container">
+                <!--Верхнее меню с информацией - адрес-->
+                <a class="map" href="index.html">
+                    <i class="fa fa-map"></i>
+                    Москва
+                </a>
+                <!--Верхнее меню с информацией - поиск-->
+                <form class="input">
+                    <input autocomplete="off" class="search-input" id="searchInput" name="searchInput" type="text" placeholder="Поиск по названию" required/>
+                    <label class="search-label" for="searchInput">
+                        <i class="fa fa-search"></i>
+                    </label>
+                </form>
+                <!--Верхнее меню с информацией - телефон-->
+                <a rel="nofollow" class="phone" href="tel:+74993221524">+7 (977) 578-52-58</a>
+                <!--Верхнее меню с информацией - whatsapp-->
+                <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+">
+                    <img width="16px" height="16px" alt="иконка whatsapp" src="images/whatsapp.svg"/>
+                </a>
+            </div>
+        </div>
+        <!--Основное меню с информацией-->
+        <nav class="nav">
+            <div class="all-menu">
+                <!--Логотип-->
+                <div class="for-margin">
+                    <a href="#" class="logo">
+                        <img class="logo-img" src="images/b.png" width="30px" height="30px">
+                    </a>
+                </div>
+                <!--Список меню-->
+                <ul class="menu" id="menu">
+                    <li id="forth">
+                        <a href="index.html"> Популярные поэты</a>
+                    </li>
+                    <li id="second">
+                        <a href="index.html"> Лучшее</a>
+                    </li>
+                    <li id="third">
+                        <a href="index.html"> Классика</a>
+                    </li>
+                    <li id="fifth">
+                        <a href="index.html"> Регистрация</a>
+                    </li>
+                </ul>
+                <!--Кнопка для бургер меню-->
+                <button class="menu-burger" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Закладка-->
+        <div class="notification">
+            <!--Иконка закладки-->
+            <div class="notification-icon">
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+            </div>
+            <!--Список ссылок в закладке-->
+            <div class="notification-dropdown">
+                <ul>
+                    <li><a id="per" href="lastbook.html">Последний стих</a></li>
+                    <li><a id="vtor" href="favorites.html">Избранное</a></li>
+                    <li><a id="tret" onclick="clearFavorites()">Удалить всё</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="blocks">
+            <div class="img_wrapper">
+                <div class="img" style="background-image: url('images/7.jpeg')"></div>
+            </div>
+            <p class="text float"><span class="M">Владимир Маяковский</span> не сразу начал писать стихи — сначала он собирался стать художником и даже учился живописи. <span class="hide"> Слава поэта пришла к нему после знакомства с авангардистами, когда первые произведения молодого автора с восторгом встретил Давид Бурлюк.</span></p>
+        </section>
+
+        <div class="list">
+            <h1 class="h2">Список произведений</h1>
+            <div class='bg-dark'>
+                <div id='shelf'>
+                    <div class='book-bg graphic' id="num36">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add36">Послушайте!</h1>
+                            <div class='contents'>
+                                <div id='back0'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Послушайте!</h3>
+                                        <pre class='text1 p36'>&emsp;
+Послушайте!
+Ведь, если звезды зажигают —
+значит — это кому-нибудь нужно?
+Значит — кто-то хочет, чтобы они были?
+Значит — кто-то называет эти
+плево́чки жемчужиной?
+И, надрываясь
+в метелях полу́денной пыли,
+врывается к богу,
+боится, что опоздал,
+плачет,
+целует ему жилистую руку,
+
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q36'>
+А после
+ходит тревожный,
+но спокойный наружно.
+Говорит кому-то:
+«Ведь теперь тебе ничего?
+Не страшно? Да?!»
+Послушайте!
+Ведь, если звезды
+зажигают —
+значит — это кому-нибудь нужно?
+Значит — это необходимо,
+чтобы каждый вечер
+над крышами
+загоралась хоть одна звезда?!
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add36')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg data' id="num37">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add37">А вы могли бы?</h1>
+                            <div class='contents'>
+                                <div id='back1'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>А вы могли бы?</h3>
+                                        <pre class='text1 p37'>&emsp;
+Я сразу смазал карту будня,
+плеснувши краску из стакана;
+я показал на блюде студня
+косые скулы океана.
+На чешуе жестяной рыбы
+прочёл я зовы новых губ.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q37'>
+А вы
+ноктюрн сыграть
+могли бы
+на флейте водосточных труб?
+
+1913 г.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add37')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg photo' id="num38">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add38">Стихи о советском паспорте</h1>
+                            <div class='contents'>
+                                <div id='back2'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Стихи о советском паспорте</h3>
+                                        <pre class='text1 p38'>&emsp;
+Я волком бы
+выгрыз
+бюрократизм.
+К мандатам
+почтения нету.
+К любым
+чертям с матерями
+катись
+любая бумажка.
+Но эту…
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q38'>
+Я
+достаю
+из широких штанин
+дубликатом
+бесценного груза.
+Читайте,
+завидуйте,
+я —
+гражданин
+Советского Союза.
+
+1929 г.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add38')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg landscape' id="num39">
+                        <div class='book flex-column'>
+                            <div class='book-shading'></div>
+                            <h1 id="add39">Нате!</h1>
+                            <div class='contents'>
+                                <div id='back3'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Нате!</h3>
+                                        <pre class='text1 p39'>&emsp;
+Через час отсюда в чистый переулок
+вытечет по человеку ваш обрюзгший жир,
+а я вам открыл столько стихов шкатулок,
+я — бесценных слов мот и транжир.
+
+Вот вы, мужчина, у вас в усах капуста
+Где-то недокушанных, недоеденных щей;
+вот вы, женщина, на вас белила густо,
+вы смотрите устрицей из раковин вещей.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q39'>
+Все вы на бабочку поэтиного сердца
+взгромоздитесь, грязные,
+в калошах и без калош.
+Толпа озвереет, будет тереться,
+ощетинит ножки стоглавая вошь.
+
+А если сегодня мне, грубому гунну,
+кривляться перед
+вами не захочется — и вот
+я захохочу и радостно плюну,
+плюну в лицо вам
+я — бесценных слов транжир и мот.
+
+1913 г.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add39')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg writing' id="num40">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add40">Флейта-позвоночник</h1>
+                            <div class='contents'>
+                                <div id='back4'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Флейта-позвоночник</h3>
+                                        <pre class='text1 p40'>&emsp;
+За всех вас,
+которые нравились или нравятся,
+хранимых иконами у души в пещере,
+как чашу вина в застольной здравице,
+подъемлю стихами наполненный череп.
+Все чаще думаю —
+не поставить ли лучше
+точку пули в своем конце.
+Сегодня я
+на всякий случай
+даю прощальный концерт.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q40'>
+Память!
+Собери у мозга в зале
+любимых неисчерпаемые очереди.
+Смех из глаз в глаза лей.
+Былыми свадьбами ночь ряди.
+Из тела в тело веселье лейте.
+Пусть не забудется ночь никем.
+Я сегодня буду играть на флейте.
+На собственном позвоночнике.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add40')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg web' id="num41">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add41">Ешь ананасы…</h1>
+                            <div class='contents'>
+                                <div id='back5'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Ешь ананасы…</h3>
+                                        <pre class='text1 p41'>&emsp;
+Ешь ананасы, рябчиков жуй,
+день твой последний приходит, буржуй.
+
+1917 г.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q41'>
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add41')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <a class="back" href="index.html"><i class="fa fa-reply"><span class="t">Вернуться назад</span></i></a>
+    </main>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <h3>Poetry Librery</h3>
+        <p>Спасибо за то, что пользуетесь нашим сайтом! Благодаря Вам мы становимся лучше.
+        </p>
+        <ul class="socials">
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy;2023 PoetryLibrery. designed by <span>Mukhin Sergey</span></p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="js/Mayakovski.js"></script>
+</body>
+</html>
+
+
+

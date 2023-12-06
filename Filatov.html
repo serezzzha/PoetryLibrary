@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="books, poetry">
+    <meta name="discription" content="Это сайт со стихами">
+    <title>Филатов</title> <!-- название страницы -->
+    <link type="image/png" sizes="32x32" rel="icon" href="images/b.png">
+    <meta name="viewport" content="width=device-width">
+
+
+    <link rel="stylesheet" href="css/Filatov.css">
+</head>
+
+<body>
+<!--Обёртка для скрытия бургер-меню-->
+<div class="body-wrapper">
+    <header class="header" id="topNav">
+        <!--Верхнее меню с информацией-->
+        <div class="super-navbar">
+            <div class="container">
+                <!--Верхнее меню с информацией - адрес-->
+                <a class="map" href="index.html">
+                    <i class="fa fa-map"></i>
+                    Москва
+                </a>
+                <!--Верхнее меню с информацией - поиск-->
+                <form class="input">
+                    <input autocomplete="off" class="search-input" id="searchInput" name="searchInput" type="text" placeholder="Поиск по названию" required/>
+                    <label class="search-label" for="searchInput">
+                        <i class="fa fa-search"></i>
+                    </label>
+                </form>
+                <!--Верхнее меню с информацией - телефон-->
+                <a rel="nofollow" class="phone" href="tel:+74993221524">+7 (977) 578-52-58</a>
+                <!--Верхнее меню с информацией - whatsapp-->
+                <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+">
+                    <img width="16px" height="16px" alt="иконка whatsapp" src="images/whatsapp.svg"/>
+                </a>
+            </div>
+        </div>
+        <!--Основное меню с информацией-->
+        <nav class="nav">
+            <div class="all-menu">
+                <!--Логотип-->
+                <div class="for-margin">
+                    <a href="#" class="logo">
+                        <img class="logo-img" src="images/b.png" width="30px" height="30px">
+                    </a>
+                </div>
+                <!--Список меню-->
+                <ul class="menu" id="menu">
+                    <li id="forth">
+                        <a href="index.html"> Популярные поэты</a>
+                    </li>
+                    <li id="second">
+                        <a href="index.html"> Лучшее</a>
+                    </li>
+                    <li id="third">
+                        <a href="index.html"> Классика</a>
+                    </li>
+                    <li id="fifth">
+                        <a href="index.html"> Регистрация</a>
+                    </li>
+                </ul>
+                <!--Кнопка для бургер меню-->
+                <button class="menu-burger" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Закладка-->
+        <div class="notification">
+            <!--Иконка закладки-->
+            <div class="notification-icon">
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+            </div>
+            <!--Список ссылок в закладке-->
+            <div class="notification-dropdown">
+                <ul>
+                    <li><a id="per" href="lastbook.html">Последний стих</a></li>
+                    <li><a id="vtor" href="favorites.html">Избранное</a></li>
+                    <li><a id="tret" onclick="clearFavorites()">Удалить всё</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="blocks">
+            <div class="img_wrapper">
+                <div class="img" style="background-image: url('images/10.jpeg')"></div>
+            </div>
+            <p class="text float"><span class="M">Леонид Филатов</span> — советский и российский кинорежиссёр, поэт, драматург, публицист, телеведущий. <span class="hide"> Народный артист Российской Федерации (1995), лауреат Государственной премии Российской Федерации (1996).</span></p>
+        </section>
+
+        <div class="list">
+            <h1 class="h2">Список произведений</h1>
+            <div class='bg-dark'>
+                <div id='shelf'>
+                    <div class='book-bg graphic' id="num30">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add30">Тот клятый год</h1>
+                            <div class='contents'>
+                                <div id='back0'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Тот клятый год</h3>
+                                        <pre class='text1 p30'>&emsp;
+Тот клятый год, тому уж много лет,
+я иногда сползал с больничной койки.
+Сгребал свои обломки и осколки и
+свой реконструировал скелет.
+И крал себя у чутких медсестер,
+ноздрями чуя острый запах воли,
+Я убегал к двухлетней внучке Оле,
+туда, на жизнью пахнущий простор.
+Мы с Олей отправлялись в детский парк,
+садились на любимые качели,
+Глушили сок, мороженое ели,
+глазели на гуляющих собак.
+Оставив день воскресный позади,
+я возвращался в стен больничных голость,
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q30'>
+Но и в палате слышал Олин голос:
+«Дай руку, деда, деда, погоди…»
+И я годил, годил, сколь было сил,
+а на соседних койках не годили,
+Хирели, сохли, чахли, уходили,
+никто их погодить не попросил.
+Когда я чую жжение в груди, я вижу,
+как с другого края поля
+Ко мне несется маленькая
+Оля с истошным криком:
+«Деда-а-а, погоди-и…» И я гожу,
+я все еще гожу и, кажется,
+стерплю любую муку, Пока ту крохотную
+руку в своей измученной руке еще держу.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add30')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg data' id="num31">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add31">Полоса препятствий</h1>
+                            <div class='contents'>
+                                <div id='back1'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Полоса препятствий</h3>
+                                        <pre class='text1 p31'>&emsp;
+Не о том разговор, как ты жил до сих пор,
+Как ты был на решения скор,
+Как ты лазал на спор через дачный забор
+И препятствий не видел в упор…
+Да, ты весело жил, да, ты счастливо рос,
+Сладко елось тебе и спалось,
+Только жизнь чередует жару и мороз,
+Только жизнь состоит из полос…
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q31'>
+И однажды сквозь тучи блеснут небеса
+И в лицо тебе брызнет роса —
+Это значит, что пройдена та полоса,
+Ненавистная та полоса…
+А теперь отдыхай и валяйся в траве,
+В безмятежное небо смотри…
+Только этих полос у судьбы в рукаве
+Не одна, и не две, и не три…
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add31')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg photo' id="num32">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add32">Оранжевый кот</h1>
+                            <div class='contents'>
+                                <div id='back2'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Оранжевый кот</h3>
+                                        <pre class='text1 p32'>&emsp;
+У окна стою я, как у холста,
+ах какая за окном красота!
+Будто кто-то перепутал цвета,
+и Дзержинку, и Манеж.
+Над Москвой встает зеленый восход,
+по мосту идет оранжевый кот,
+и лоточник у метро продает
+апельсины цвета беж.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q32'>
+У окна стою я, как у холста,
+ах какая за окном красота!
+Будто кто-то перепутал цвета,
+и Дзержинку, и Манеж.
+Над Москвой встает зеленый восход,
+по мосту идет оранжевый кот,
+и лоточник у метро продает
+апельсины цвета беж.
+Апельсины цвета беж.
+Апельсины цвета беж.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add32')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg landscape' id="num33">
+                        <div class='book flex-column'>
+                            <div class='book-shading'></div>
+                            <h1 id="add33">Мгновения тишины</h1>
+                            <div class='contents'>
+                                <div id='back3'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Мгновения тишины</h3>
+                                        <pre class='text1 p33'>&emsp;
+Сомкните плотнее веки
+И не открывайте век,
+Прислушайтесь и ответьте:
+Который сегодня век?
+В сошедшей с ума Вселенной,
+Как в кухне среди корыт,
+Нам душно от дикселендов,
+Парламентов и коррид.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q33'>
+И сколько б «наполеонов»
+Замешкалось крикнуть «Пли!»,
+И сколько бы опаленных
+Не рухнуло в ковыли,
+И сколько бы наглых пешек
+Не выбилось из хвоста,
+И сколько бы наших певчих
+Сумело дожить до ста!
+Консилиумы напрасны…
+Дискуссии не нужны…
+Всего и делов-то, братцы, —
+Мгновение тишины…
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add33')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg writing' id="num34">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add34">Спасибо</h1>
+                            <div class='contents'>
+                                <div id='back4'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Спасибо</h3>
+                                        <pre class='text1 p34'>&emsp;
+В наш трудный, но все-таки праведный век,
+Отмеченный потом и кровью,
+Не хлебом единым ты жив, человек, —
+Ты жив, человек, и любовью.
+
+Не злись, что пришла — оттеснила дела,
+Не злись, что пришла — не спросила, —
+Скажи ей спасибо за то, что пришла, —
+Скажи ей за это спасибо!..
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q34'>
+Когда удается одерживать верх
+Тебе над бедою любою, —
+Не волей единой ты жив, человек, —
+Ты жив, человек, и любовью.
+
+Не хнычь, что была, мол, строптива и зла,
+Не хнычь, что была, мол, спесива, —
+Скажи ей спасибо за то, что была, —
+Скажи ей за это спасибо!..
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add34')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg web' id="num35">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add35">Замри</h1>
+                            <div class='contents'>
+                                <div id='back5'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Замри</h3>
+                                        <pre class='text1 p35'>&emsp;
+Должно быть любому ребенку Земли
+Известна игра под названьем «замри».
+Долбят непоседы от зари до зари:
+«Замри!..»
+
+Замри — это, в общем-то, детский пароль,
+Но взрослым его не хватает порой.
+Не взять ли его у детишек взаймы?
+«Замри?..»
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q35'>
+О, как бы легко не сменялись года,
+Однажды наступит минута, тогда
+Вам некто знакомый шепнет изнутри:
+«Замри!»
+
+И память пройдется по старым счетам,
+И кровь от волненья прихлынет к щекам.
+И будет казаться страшней, чем «умри» —
+«Замри».
+
+1975 г.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add35')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <a class="back" href="index.html"><i class="fa fa-reply"><span class="t">Вернуться назад</span></i></a>
+    </main>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <h3>Poetry Librery</h3>
+        <p>Спасибо за то, что пользуетесь нашим сайтом! Благодаря Вам мы становимся лучше.
+        </p>
+        <ul class="socials">
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy;2023 PoetryLibrery. designed by <span>Mukhin Sergey</span></p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="js/Filatov.js"></script>
+</body>
+</html>
+
+
+

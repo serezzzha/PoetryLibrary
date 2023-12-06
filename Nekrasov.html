@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="books, poetry">
+    <meta name="discription" content="Это сайт со стихами">
+    <title>Некрасов</title> <!-- название страницы -->
+    <link type="image/png" sizes="32x32" rel="icon" href="images/b.png">
+    <meta name="viewport" content="width=device-width">
+
+
+    <link rel="stylesheet" href="css/Nekrasov.css">
+</head>
+
+<body>
+<!--Обёртка для скрытия бургер-меню-->
+<div class="body-wrapper">
+    <header class="header" id="topNav">
+        <!--Верхнее меню с информацией-->
+        <div class="super-navbar">
+            <div class="container">
+                <!--Верхнее меню с информацией - адрес-->
+                <a class="map" href="index.html">
+                    <i class="fa fa-map"></i>
+                    Москва
+                </a>
+                <!--Верхнее меню с информацией - поиск-->
+                <form class="input">
+                    <input autocomplete="off" class="search-input" id="searchInput" name="searchInput" type="text" placeholder="Поиск по названию" required/>
+                    <label class="search-label" for="searchInput">
+                        <i class="fa fa-search"></i>
+                    </label>
+                </form>
+                <!--Верхнее меню с информацией - телефон-->
+                <a rel="nofollow" class="phone" href="tel:+74993221524">+7 (977) 578-52-58</a>
+                <!--Верхнее меню с информацией - whatsapp-->
+                <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+">
+                    <img width="16px" height="16px" alt="иконка whatsapp" src="images/whatsapp.svg"/>
+                </a>
+            </div>
+        </div>
+        <!--Основное меню с информацией-->
+        <nav class="nav">
+            <div class="all-menu">
+                <!--Логотип-->
+                <div class="for-margin">
+                    <a href="#" class="logo">
+                        <img class="logo-img" src="images/b.png" width="30px" height="30px">
+                    </a>
+                </div>
+                <!--Список меню-->
+                <ul class="menu" id="menu">
+                    <li id="forth">
+                        <a href="index.html"> Популярные поэты</a>
+                    </li>
+                    <li id="second">
+                        <a href="index.html"> Лучшее</a>
+                    </li>
+                    <li id="third">
+                        <a href="index.html"> Классика</a>
+                    </li>
+                    <li id="fifth">
+                        <a href="index.html"> Регистрация</a>
+                    </li>
+                </ul>
+                <!--Кнопка для бургер меню-->
+                <button class="menu-burger" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Закладка-->
+        <div class="notification">
+            <!--Иконка закладки-->
+            <div class="notification-icon">
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+            </div>
+            <!--Список ссылок в закладке-->
+            <div class="notification-dropdown">
+                <ul>
+                    <li><a id="per" href="lastbook.html">Последний стих</a></li>
+                    <li><a id="vtor" href="favorites.html">Избранное</a></li>
+                    <li><a id="tret" onclick="clearFavorites()">Удалить всё</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="blocks">
+            <div class="img_wrapper">
+                <div class="img" style="background-image: url('images/4.jpeg')"></div>
+            </div>
+            <p class="text float"><span class="M">Николай Некрасов</span> известен современным читателям как «самый крестьянский» поэт России. <span class="hide"> Именно он одним из первых заговорил о трагедии крепостничества и исследовал духовный мир русского крестьянства.</span></p>
+        </section>
+
+        <div class="list">
+            <h1 class="h2">Список произведений</h1>
+            <div class='bg-dark'>
+                <div id='shelf'>
+                    <div class='book-bg graphic' id="num42">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add42">Железная дорога</h1>
+                            <div class='contents'>
+                                <div id='back0'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Железная дорога</h3>
+                                        <pre class='text1 p42'>&emsp;
+Славная осень! Здоровый, ядреный
+Воздух усталые силы бодрит;
+Лед неокрепший на речке студеной
+Словно как тающий сахар лежит;
+
+Около леса, как в мягкой постели,
+Выспаться можно — покой и простор!
+Листья поблекнуть еще не успели,
+Желты и свежи лежат, как ковер.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q42'>
+Славная осень! Морозные ночи,
+Ясные, тихие дни…
+Нет безобразья в природе! И кочи,
+И моховые болота, и пни —
+
+Все хорошо под сиянием лунным,
+Всюду родимую Русь узнаю…
+Быстро лечу я по рельсам чугунным,
+Думаю думу свою…
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add42')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg data' id="num43">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add43">Крестьянские дети</h1>
+                            <div class='contents'>
+                                <div id='back1'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Крестьянские дети</h3>
+                                        <pre class='text1 p43'>&emsp;
+Однажды, в студеную зимнюю пору
+Я из лесу вышел; был сильный мороз.
+Гляжу, поднимается медленно в гору
+Лошадка, везущая хворосту воз.
+И шествуя важно, в спокойствии чинном,
+Лошадку ведет под уздцы мужичок
+В больших сапогах, в полушубке овчинном,
+В больших рукавицах… а сам с ноготок!
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q43'>
+«Здорово, парнище!» — «Ступай себе мимо!»
+— «Уж больно ты грозен, как я погляжу!
+Откуда дровишки?» — «Из лесу, вестимо;
+Отец, слышишь, рубит, а я отвожу».
+(В лесу раздавался топор дровосека.)
+«А что, у отца-то большая семья?»
+— «Семья-то большая, да два человека
+Всего мужиков-то: отец мой да я…»
+— «Так вот оно что! А как звать тебя?»
+— «Власом».
+— «А кой-тебе годик?» — «Шестой миновал…
+Ну, мертвая!» — крикнул малюточка басом,
+Рванул под уздцы и быстрей зашагал.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add43')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg photo' id="num44">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add44">Мороз, красный нос</h1>
+                            <div class='contents'>
+                                <div id='back2'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Мороз, красный нос</h3>
+                                        <pre class='text1 p44'>&emsp;
+Есть женщины в русских селеньях
+С спокойною важностью лиц,
+С красивою силой в движеньях,
+С походкой, со взглядом цариц, —
+
+Их разве слепой не заметит,
+А зрячий о них говорит:
+«Пройдет — словно солнце осветит!
+Посмотрит — рублем подарит!»
+
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q44'>
+Идут они той же дорогой,
+Какой весь народ наш идет,
+Но грязь обстановки убогой
+К ним словно не липнет. Цветет
+
+Красавица, миру на диво,
+Румяна, стройна, высока,
+Во всякой одежде красива,
+Ко всякой работе ловка.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add44')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg landscape' id="num45">
+                        <div class='book flex-column'>
+                            <div class='book-shading'></div>
+                            <h1 id="add45">Размышления...</h1>
+                            <div class='contents'>
+                                <div id='back3'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Размышления...</h3>
+                                        <pre class='text1 p45'>&emsp;
+Вот парадный подъезд.
+По торжественным дням,
+Одержимый холопским недугом,
+Целый город с каким-то испугом
+Подъезжает к заветным дверям;
+Записав свое имя и званье,
+Разъезжаются гости домой,
+Так глубоко довольны собой,
+Что подумаешь — в том их призванье!
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q45'>
+А в обычные дни этот пышный подъезд
+Осаждают убогие лица:
+Прожектеры, искатели мест,
+И преклонный старик, и вдовица.
+От него и к нему то и знай по утрам
+Всё курьеры с бумагами скачут.
+Возвращаясь, иной напевает «трам-трам»,
+А иные просители плачут...
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add45')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg writing' id="num46">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add46">Не ветер...</h1>
+                            <div class='contents'>
+                                <div id='back4'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>Не ветер бушует над бором</h3>
+                                        <pre class='text1 p46'>&emsp;
+Не ветер бушует над бором,
+Не с гор побежали ручьи,
+Мороз-воевода дозором
+Обходит владенья свои.
+
+Глядит — хорошо ли метели
+Лесные тропы занесли,
+И нет ли где трещины, щели,
+И нет ли где голой земли?
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q46'>
+Пушисты ли сосен вершины,
+Красив ли узор на дубах?
+И крепко ли скованы льдины
+В великих и малых водах?
+
+Идет — по деревьям шагает,
+Трещит по замерзлой воде,
+И яркое солнце играет
+В косматой его бороде.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add46')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='book-bg web' id="num47">
+                        <div class='book'>
+                            <div class='book-shading'></div>
+                            <h1 id="add47">К ней!</h1>
+                            <div class='contents'>
+                                <div id='back5'>
+                                    <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+                                        <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                                    </svg>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                        <h3 style='text-align: center'>К ней!</h3>
+                                        <pre class='text1 p47'>&emsp;
+Гляжу с тоской на розы я и тернии
+И думой мчусь на край миров:
+Моя душа в Саратовской губернии,
+У светлых волжских берегов.
+
+Я близ нее! О рай, о наслажденье!
+Как на мечтах я скоро прискакал!
+Бывало, я имел туда хождение
+И словно конь почтовый уставал.
+                                    </pre>
+                                    </div>
+                                </div>
+                                <div class='page'>
+                                    <div>
+                                <pre class='text1 pre2 q47'>
+Страдал тогда кровавыми мозолями…
+Теперь ношусь крылатою мечтой —
+В эфире — там — близ ней —
+над антресолями, —
+И вот тайком влетел в ее покой!
+
+Вот, вот она, души моей пиитика!
+Сидит печальна и бледна.
+В ее словах, в движениях политика,
+А на челе — тоска по мне видна.
+                                </pre>
+                                    </div>
+                                    <i class="fa fa-heart" onclick="addToFavorites('#add47')"></i>
+                                </div>
+                                <div class='page-shading'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <a class="back" href="index.html"><i class="fa fa-reply"><span class="t">Вернуться назад</span></i></a>
+    </main>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <h3>Poetry Librery</h3>
+        <p>Спасибо за то, что пользуетесь нашим сайтом! Благодаря Вам мы становимся лучше.
+        </p>
+        <ul class="socials">
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy;2023 PoetryLibrery. designed by <span>Mukhin Sergey</span></p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="js/Nekrasov.js"></script>
+</body>
+</html>
+
+
+

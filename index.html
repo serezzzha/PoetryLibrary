@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="books, poetry">
+    <meta name="discription" content="Это сайт со стихами">
+    <title>PoetryLibrery</title> <!-- название страницы -->
+    <link type="image/png" sizes="32x32" rel="icon" href="images/b.png">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <!--Обёртка для скрытия бургер-меню-->
+    <div class="body-wrapper">
+        <header class="header" id="topNav">
+            <!--Верхнее меню с информацией-->
+            <div class="super-navbar">
+                <div class="container">
+                    <!--Верхнее меню с информацией - адрес-->
+                    <a class="map" href="#map">
+                        <i class="fa fa-map"></i>
+                        Москва
+                    </a>
+                    <!--Верхнее меню с информацией - поиск-->
+                    <form class="input">
+                        <input autocomplete="off" class="search-input" id="searchInput" name="searchInput" type="text" placeholder="Поиск по названию" required/>
+                        <label class="search-label" for="searchInput">
+                            <i class="fa fa-search"></i>
+                        </label>
+                    </form>
+                    <!--Верхнее меню с информацией - телефон-->
+                    <a rel="nofollow" class="phone" href="tel:+74993221524">+7 (977) 578-52-58</a>
+                    <!--Верхнее меню с информацией - whatsapp-->
+                    <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+">
+                        <img width="16px" height="16px" alt="иконка whatsapp" src="images/whatsapp.svg"/>
+                    </a>
+                </div>
+            </div>
+            <!--Основное меню с информацией-->
+            <nav class="nav">
+                <div class="all-menu">
+                    <!--Логотип-->
+                    <div class="for-margin">
+                        <a href="#" class="logo">
+                            <img class="logo-img" src="images/b.png" width="30px" height="30px">
+                        </a>
+                    </div>
+                    <!--Список меню-->
+                    <ul class="menu" id="menu">
+                        <li id="forth">
+                            <a href="#poets"> Популярные поэты</a>
+                        </li>
+                        <li id="second">
+                            <a href="#best"> Лучшее</a>
+                        </li>
+                        <li id="third">
+                            <a href="#klass"> Классика</a>
+                        </li>
+                        <li id="fifth">
+                            <a href="Registration.html"> Регистрация</a>
+                        </li>
+                    </ul>
+                    <!--Кнопка для бургер меню-->
+                    <button class="menu-burger" id="burger">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!--Основное тело сайта-->
+        <main>
+
+            <!--Закладка-->
+            <div class="notification">
+                <!--Иконка закладки-->
+                <div class="notification-icon">
+                    <i class="fa fa-bookmark" aria-hidden="true"></i>
+                </div>
+                <!--Список ссылок в закладке-->
+                <div class="notification-dropdown">
+                    <ul>
+                        <li><a id="per" href="lastbook.html">Последний стих</a></li>
+                        <li><a id="vtor" href="favorites.html">Избранное</a></li>
+                        <li><a id="tret" onclick="clearFavorites()">Удалить всё</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Секция с бестселлерами-->
+            <section id="poets" class="blocks">
+                <!--Текст-->
+                <h2 class="h2">Популярные поэты</h2>
+                <div class="text">Кого люди читают больше всего? </div>
+                <div class="text sub">
+                    В этом разделе ты точно найдёшь ответ на этот вопрос!
+                </div>
+                <!--Сетка с картинками-->
+                <div class="grid">
+                <div class="gallery">
+                    <!--Картинка-->
+                    <div class="image" style="--bg: url(../images/1.jpeg)">
+                        <!--Описание книги-->
+                        <div class="content">
+                            <p class="c1">Михаил Лермонтов</p>
+                            <button class="lyrics" data-url="Lermontov.html">Перейти к стихам</button>
+                            <!--<i class="fa fa-heart" onclick="addToFavorites('../Users/serezzzha/Desktop/zutq/images/grid/2.webp')"></i>-->
+                        </div>
+                    </div>
+                    <div class="image" style="--bg: url(../images/2.jpeg)">
+                        <div class="content">
+                            <p class="c1">Александр Пушкин</p>
+                            <button class="lyrics" data-url="Pushkin.html">Перейти к стихам</button>
+                        </div>
+                    </div>
+                    <div class="image" style="--bg: url(../images/10.jpeg)">
+                        <div class="content">
+                            <p class="c1">Леонид Филатов</p>
+                            <button class="lyrics" data-url="Filatov.html">Перейти к стихам</button>
+                        </div>
+                    </div>
+                    <div class="image" style="--bg: url(../images/3.jpeg)">
+                        <div class="content">
+                            <p class="c1">Александр Блок</p>
+                            <button class="lyrics" data-url="Blok.html">Перейти к стихам</button>
+                        </div>
+                    </div>
+                    <div class="image" style="--bg: url(../images/4.jpeg)">
+                        <div class="content">
+                            <p class="c1">Николай Некрасов</p>
+                            <button class="lyrics" data-url="Nekrasov.html">Перейти к стихам</button>
+                        </div>
+                    </div>
+                    <div class="image" style="--bg: url(../images/5.jpeg)">
+                        <div class="content">
+                            <p class="c1">Сергей Есенин</p>
+                            <button class="lyrics" data-url="Esenin.html">Перейти к стихам</button>
+                        </div>
+                    </div>
+                    <div class="image" style="--bg: url(../images/9.jpeg)">
+                        <div class="content">
+                            <p class="c1">Фёдор Сваровский</p>
+                            <button class="lyrics" data-url="Svarovski.html">Перейти к стихам</button>
+                        </div>
+                    </div>
+                    <div class="image" style="--bg: url(../images/6.jpeg)">
+                        <div class="content">
+                            <p class="c1">Анна Ахматова</p>
+                            <button class="lyrics" data-url="Ahmatova.html">Перейти к стихам</button>
+                        </div>
+                    </div>
+                    <div class="image" style="--bg: url(../images/8.jpeg)">
+                        <div class="content">
+                            <p class="c1">Агния Барто</p>
+                            <button class="lyrics" data-url="Barto.html">Перейти к стихам</button>
+                        </div>
+                    </div>
+                    <div class="image" style="--bg: url(../images/7.jpeg)">
+                        <div class="content">
+                            <p class="c1">Владимир Маяковский</p>
+                            <button class="lyrics" data-url="Mayakovski.html">Перейти к стихам</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+
+
+
+            <!--Секция с новинками-->
+            <section id="best" class="blocks">
+                <!--Текст-->
+                <h2 class="h2">Лучшее</h2>
+                <div class="text">Думаешь с чего начать? </div>
+                <div class="text sub">
+                    Начни от сюда! Стихи, которые должен знать каждый!
+                </div>
+                <div class="new-main">
+                    <div class="new-block">
+                        <div class="new-block__image-wrapper">
+                            <div class="new-block__image" style="background-image: url(images/sh.png)"></div>
+                        </div>
+                        <ul class="list">
+                            <li class="poetry">
+                                <a href="Pushkin.html">Александр Пушкин - К***
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="poetry">
+                                <a href="Esenin.html">Сергей Есенин - Черёмуха
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="poetry">
+                                <a href="Ahmatova.html">Анна Ахматова - Я научилась просто, мудро жить...
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="poetry">
+                                <a href="Blok.html">Александр Блок - О, я хочу безумно жить...
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="poetry">
+                                <a href="Blok.html">Александр Блок - Девушка пела
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="poetry">
+                                <a href="Blok.html">Анна Ахматова - Двадцать первое. Ночь. Понедельник...
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="poetry">
+                                <a href="Nekrasov.html">Николай Некрасов - Внимая ужасам войны...
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                        </ul>
+
+                        <div class="new-block__image-wrapper2">
+                            <div class="new-block__image2" style="background-image: url(images/sh2.png)"></div>
+                        </div>
+                        <ul class="list2">
+                            <li class="poetry">
+                                <a href="Nekrasov.html">Николай Некрасов - Тройка
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="poetry">
+                                <a href="Lermontov.html">Михаил Лермонтов - Одиночество
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="poetry">
+                                <a href="Ahmatova.html">Анна Ахматова - Тебе покорной? Ты сошёл с ума...
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="poetry">
+                                <a href="Lermontov.html">Михаил Лермонтов - Парус
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+
+                        <div class="new-block__image-wrapper3">
+                            <div class="new-block__image3" style="background-image: url(images/sh3.png)"></div>
+                        </div>
+                        <ul class="list3">
+                            <li class="poetry">
+                                <a href="Pushkin.html">Александр Пушкин - Узник
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="poetry">
+                                <a href="Lermontov.html">Михаил Лермонтов - Тучи
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="poetry">
+                                <a href="Ahmatova.html">Анна Ахматова - Все ушли и никто не вернулся
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+
+                            <li class="poetry">
+                                <a href="Pushkin.html">Александр Пушкин - Я вас любил
+                                    <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+               <!-- <video src="../videos/smoke-background-optimized.mp4" class="showcase__video" autoplay loop muted></video>-->
+            </section>
+
+
+
+
+
+            <section id="klass" class="showcase">
+                <h2 class="h2">Классика</h2>
+                <div class="text">Хочешь прикоснуться к вечному? </div>
+                <div class="text sub">
+                    В этом разделе тебя ждут тысячи книг, которые всегда будут актуальны!
+                </div>
+                <div class="showcase__content-wrapper">
+                    <div class="showcase__content">
+                        <div class="showcase-carousel">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide showcase-carousel__item">
+                                    <div class="showcase-carousel__image-wrapper">
+                                        <div class="showcase-carousel__image" style="background-image: url(images/14.jpeg)">
+                                            <div class="content">
+                                                <button class="lyrics2" data-url="Esenin.html">Перейти к стихам</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Front</p>
+                                </div>
+
+                                <!--<i class="fa fa-heart" onclick="addToFavorites('../Users/serezzzha/Desktop/zutq/images/Классика/1.png')"></i>-->
+                                <div class="swiper-slide showcase-carousel__item">
+                                    <div class="showcase-carousel__image-wrapper">
+                                        <div class="showcase-carousel__image" style="background-image: url(images/12.png)">
+                                            <div class="content">
+                                                <button class="lyrics2" data-url="Mayakovski.html">Перейти к стихам</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Front</p>
+                                </div>
+
+                                <div class="swiper-slide showcase-carousel__item">
+                                    <div class="showcase-carousel__image-wrapper">
+                                        <div class="showcase-carousel__image" style="background-image: url(images/13.jpg)">
+                                            <div class="content">
+                                                <button class="lyrics2" data-url="Lermontov.html">Перейти к стихам</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Front</p>
+                                </div>
+
+                                <div class="swiper-slide showcase-carousel__item">
+                                    <div class="showcase-carousel__image-wrapper">
+                                        <div class="showcase-carousel__image" style="background-image: url(images/18.webp)">
+                                            <div class="content">
+                                                <button class="lyrics2" data-url="Ahmatova.html">Перейти к стихам</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Front</p>
+                                </div>
+
+                                <div class="swiper-slide showcase-carousel__item">
+                                    <div class="showcase-carousel__image-wrapper">
+                                        <div class="showcase-carousel__image" style="background-image: url(images/19.png)">
+                                            <div class="content">
+                                                <button class="lyrics2" data-url="Pushkin.html">Перейти к стихам</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Front</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showcase-navigation">
+                            <div class="showcase-navigation__prev"></div>
+                            <div class="showcase-navigation__next"></div>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- <video src="../videos/smoke-background-optimized.mp4" class="showcase__video" autoplay loop muted></video>-->
+            </section>
+
+            <section id="map" class="blocks">
+                <h2 class="h2">Наше расположение</h2>
+                <div class="text">Не хочешь читать онлайн?</div>
+                <div class="text sub">
+                    Приходи в библиотеку и выбери любую кнугу по своему вкусу!
+                </div>
+                <div class="map-wrapper">
+                    <iframe class="karta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.0957327922665!2d37.4802999!3d55.669935400000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1700400006776!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Poetry Librery</h3>
+            <p>Спасибо за то, что пользуетесь нашим сайтом! Благодаря Вам мы становимся лучше.
+            </p>
+            <ul class="socials">
+                <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=79775785258&amp;text=Здравствуйте!+У+меня+есть+вопрос!+"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2023 PoetryLibrery. designed by <span>Mukhin Sergey</span></p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+<html>

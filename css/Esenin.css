@@ -1,0 +1,1410 @@
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+/*Всё*/
+* {
+    box-sizing: border-box;
+}
+.logo-img{
+    max-width: 40px;
+}
+body, html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/*Всё тело сайта*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Обёртка для скрытия бургер-меню*/
+.body-wrapper{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/*Всё верехнее меню*/
+.header{
+    transition-duration: .4s;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1030;
+    box-shadow: #111 0 0 8px;
+    pointer-events: none;
+}
+
+/*Верхнее меню с информацией - все элементы*/
+.super-navbar{
+    background-color: #333;
+    color: white;
+    pointer-events: all;
+}
+
+/*Верхнее меню с информацией - блоки элементов*/
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 7px;
+}
+
+/*Верхнее меню с информацией - ссылки карта*/
+.map{
+    text-decoration: none;
+    border-width: 0;
+    color: #9f9f9f;
+    padding: 0 10px;
+    z-index: 10;
+    transition: color .3s;
+}
+.map:hover{
+    color: white;
+}
+
+/*Фавиконки*/
+.fa{
+    position: relative;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+/*Фавиконка - карта*/
+.fa-map:before {
+    content: "\f041";
+}
+
+/*Фавиконка - лупа*/
+.fa-search:before{
+    content: "\f002";
+}
+.fa-search:hover{
+    transition: color .3s;
+    color: white;
+}
+
+/*Верхнее меню с информацией - поисковик*/
+.input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 4px;
+    order: -1;
+    margin-right: auto;
+}
+
+/*Верхнее меню с информацией - поле ввода*/
+.search-input{
+    flex-shrink: 1;
+    width: 100%;
+    color: #fff;
+    order: 1;
+    background: 0 0;
+    border: none;
+    outline: none;
+}
+
+/*Верхнее меню с информацией - фав рядом с полем*/
+.search-label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding-left: 8px;
+    padding-right: 5px;
+    margin-bottom: 0;
+    color: #9f9f9f;
+    cursor: pointer;
+}
+
+/*Подсказка для input*/
+input::placeholder{
+    color: #9f9f9f;
+}
+
+/*Подсказка для input во время наведения*/
+input:focus::placeholder{
+    visibility: hidden;
+}
+
+/*Верхнее меню с информацией - телефон*/
+.phone{
+    text-decoration: none;
+    color: #c21715;
+    padding: 0 10px;
+    z-index: 10;
+    transition: color .3s;
+}
+.phone:visited{
+    text-decoration: none;
+    color: #c21715;
+}
+.phone:hover{
+    color: white;
+}
+
+/*Верхнее меню с информацией - whatsapp*/
+.whatsapp{
+    padding: 0 10px;
+    z-index: 10;
+}
+
+/*Новигация*/
+.nav{
+    background-color: #111;
+    color: white;
+    box-shadow: #111 0 0 8px;
+    pointer-events: all;
+}
+
+/*Всё основное меню*/
+.all-menu{
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+}
+
+/*Весь список основного меню*/
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+/*Список ссылок основного меню*/
+.menu li{
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+}
+
+/*Ссылки основного меню*/
+.menu a{
+    text-decoration: none;
+    color: #9f9f9f;
+}
+.menu a:visited{
+    color: #9f9f9f;
+}
+.menu a:hover{
+    color: white;
+}
+
+/*Логотип*/
+.for-margin{
+    margin-right: auto;
+    padding: 7px 0;
+}
+
+/*Картинка логотипа*/
+.logo-img{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 7px;
+}
+
+
+
+/*--------------------------------------------------------------------------*/
+
+
+
+
+/*Меню бургер*/
+.menu-burger{
+    outline: none;
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: none;
+    left: -4px;
+    top: -1px;
+    background-color: transparent;
+    padding: 10px;
+    z-index: 1030;
+}
+
+/*Посещение бургер меню*/
+.menu-burger:hover{
+    cursor: pointer;
+}
+
+/*Полоски бургер меню*/
+.menu-burger span{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #9f9f9f;
+    left: 0;
+    transition: background-color .3s, opacity .3s, transform .5s;
+    will-change: transform; /*Заранее просчитывает анимацию*/
+}
+
+/*Бургер - три полоски*/
+.menu-burger:hover span{
+    background-color: white;
+}
+.menu-burger span:nth-child(1){
+    transform: translateY(-10px);
+}
+.menu-burger span:nth-child(2){}
+.menu-burger span:nth-child(3){
+    transform: translateY(10px);
+}
+
+/*Крестик*/
+.header.open .menu-burger span{
+    background-color: white;
+}
+.header.open .menu-burger span:nth-child(1){
+    transform: translateY(0) rotate(45deg);
+}
+.header.open .menu-burger span:nth-child(2){
+    opacity: 0;
+}
+.header.open .menu-burger span:nth-child(3){
+    transform: translateY(0) rotate(-45deg);
+}
+
+
+
+/*--------------------------------------------------------------------------*/
+
+
+
+/*Основное тело сайта*/
+main{
+    padding: 85px 0 1px 0;
+    box-sizing: border-box;
+    background-color: #9f9f9f;
+}
+
+@media (max-width: 485px){
+    .phone{
+        display: none;
+    }
+    .h2{
+        font-size: 30px;
+    }
+    .pop{
+        font-size: 30px;
+    }
+    .showcase__header {
+        font-size: 5px;
+    }
+    .footer-bottom{
+        font-size: 8px;
+    }
+}
+/*Медиа запрос для телефона*/
+@media (max-width: 700px){
+    /*Уменьшение поля ввода*/
+    .input {
+        max-width: 200px;
+    }
+
+    .menu-burger{
+        display: block;
+    }
+
+    /*Бургер-меню*/
+    .menu{
+        position: absolute;
+        right: -200px;
+        top: 78px;
+        background-color: #c21715;
+        display: block;
+        padding: 20px 20px 20px 20px;
+        box-shadow: #111 0 0 8px;
+        width: 200px;
+        visibility: hidden;
+        transition: transform .5s, visibility .5s;
+        opacity: 95%;
+    }
+
+    /*Ссылки бургер-меню*/
+    .menu a{
+        font-size: 20px;
+        color: white;
+        display: block;
+        padding: 10px 0;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        background-size: 0 2px;
+        transition: background-size .3s;
+    }
+
+    /*Посещение ссылок в бургер-меню*/
+    #first a:hover{
+        background-size: 53% 2px;
+    }
+    #second a:hover{
+        background-size: 50% 2px;
+    }
+    #third a:hover{
+        background-size: 60% 2px;
+    }
+    #forth a:hover{
+        background-size: 81% 2px;
+    }
+    #fifth a:hover{
+        background-size: 77% 2px;
+    }
+    .header.open .menu{
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+    .menu a:visited{
+        color: white;
+    }
+}
+
+
+
+/*--------------------------------------------------------------------------*/
+
+
+
+/*Меню - закладка*/
+.notification {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    display: inline-block;
+    z-index: 1000;
+}
+
+/*Иконка закладки*/
+.notification-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*Иконка закладки css*/
+.fa-bookmark{
+    left: 20px;
+    top: -20px;
+    font-size: 35px;
+    color: #c21715;
+    z-index: 2000;
+    transition: all ease-in-out .5s;
+}
+
+/*Иконка закладки css при наведении*/
+.fa-bookmark:hover{
+    top: -15px;
+    color: white;
+}
+
+/*Выпадающее меню закладки*/
+.notification-dropdown {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    opacity: 95%;
+    padding: 30px 0 0 0;
+    max-width: 200px;
+    background-color: #c21715;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7), inset 0 0 4px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    transition: transform .5s, visibility .5s;
+    visibility: hidden;
+}
+
+/*Выпадающее меню закладки при наведении*/
+.notification:hover .notification-dropdown {
+    transform: translateY(100%);
+    visibility: visible;
+}
+
+/*Выпадающее меню закладки при наведении - сохранение белого цвета закладки*/
+.notification:hover .fa-bookmark{
+    top: -15px;
+    color: white;
+}
+
+/*Список меню в закладке*/
+.notification-dropdown ul {
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+/*Отдельный элемент списка*/
+.notification-dropdown li {
+    padding: 0 20px;
+}
+
+/*Ссылки списка*/
+.notification-dropdown a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    padding: 10px 0;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .3s;
+}
+
+/*Подчёркивание ссылок*/
+.notification-dropdown #per:hover{
+    background-size: 100% 2px;
+}
+.notification-dropdown #vtor:hover{
+    background-size: 65% 2px;
+}
+.notification-dropdown #tret:hover{
+    background-size: 75% 2px;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------*/
+
+
+
+body{
+    box-sizing: border-box;
+    background-color: #9f9f9f;
+    background-image: linear-gradient(to bottom right, transparent, hsl(0 0% 0% / .25));
+    background-blend-mode: color-burn;
+}
+
+.blocks{
+    position: relative;
+    box-sizing: border-box;
+    margin: 17px;
+    background-color: #333;
+    box-shadow: #111 0 0 8px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px ;
+    overflow: hidden;
+}
+
+.h2{
+    letter-spacing: 10px;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    border-bottom: 3px solid white;
+    color: white;
+    padding-left: 20px;
+    text-shadow: #111111;
+    z-index: 100;
+    margin: 20px 0 10px 0;
+}
+
+.text{
+    padding-left: 20px;
+    font-family: sans-serif;
+    font-size: 22px;
+    letter-spacing: 5px;
+    line-height: 1.75;
+    color: #9f9f9f;
+    z-index: 100;
+}
+
+.sub{
+    padding-left: 20px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+    z-index: 100;
+}
+
+.float{
+    margin-left: 220px;
+    margin-right: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.img_wrapper{
+    position: relative;
+    width: 200px;
+    height: 350px;
+}
+.img{
+    position: absolute;
+    content: '';
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.M{
+    letter-spacing: 10px;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    border-bottom: 3px solid white;
+    color: white;
+    text-shadow: #111111;
+    z-index: 100;
+    margin: 20px 0 10px 0;
+}
+
+.list{
+    background-color: #333;
+    color: hsl(0 0% 95%);
+    position: relative;
+    box-sizing: border-box;
+    margin: 20px 17px;
+    box-shadow: #111 0 0 8px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px ;
+    overflow: hidden;
+}
+
+.t{
+    padding-left: 10px;
+    font-family: sans-serif;
+    font-size: 22px;
+    letter-spacing: 5px;
+    line-height: 1.75;
+    color: #333;
+    z-index: 100;
+}
+
+.fa-reply{
+    font-size: 20px;
+    color: #333333;
+    display: block;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .3s;
+    margin: 10px 20px;
+    max-width: 280px;
+    cursor: none;
+}
+
+.fa-reply:hover{
+    background-size: 280px 2px;
+    cursor: pointer;
+}
+
+.back{
+    text-decoration: none;
+    color: #111;
+    background-size: 0 2px;
+    font-family: sans-serif;
+    cursor: default;
+}
+
+
+
+
+
+/* Футер */
+/* Общие стили для кнопок социальных сетей */
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    background-color: #111111;
+    color: #9f9f9f;
+    height: auto;
+    width: 100vw;
+    font-family: sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.75;
+    padding-top: 20px;
+}
+
+footer h3{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 10px;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+footer p{
+    padding: 10px 0;
+    margin: 0;
+    max-width: 500px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.socials{
+    margin: 0 0 1rem 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials li{
+    margin: 0 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.socials a:hover i{
+    color: #c21715;
+}
+
+.socials li:hover{
+    scale: 1.2;
+}
+
+.footer-bottom{
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    width: 100vw;
+    text-align: center;
+}
+
+.footer-bottom p{
+    max-width: 10000px;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+#shelf {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 20px 20px;
+}
+
+/* BOOK BINDINGS */
+.book-bg {
+    overflow: hidden;
+    height: 32rem;
+    margin: 5px;
+    cursor: pointer;
+    transition: margin 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+    filter: grayscale(25%);
+    border-radius: 4px;
+    background: grey;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.4);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-image: linear-gradient(
+            to right,
+            #333,
+            #333 15%,
+            antiquewhite 30%,
+            antiquewhite 70%,
+            #333 85%,
+            #333
+    );
+    /*border-image-slice: 1;*/
+    order: 200;
+}
+.book-bg:hover {
+    box-shadow: 0 0.5rem 3rem -0.5rem rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    margin-top: -15px;
+    transform: scale(1.03, 1.03);
+}
+/* END BOOK BINDINGS */
+
+/* BOOK WIDTHS */
+.graphic {
+    width: 6rem;
+}
+.data {
+    width: 5rem;
+}
+.photo {
+    width: 5rem;
+}
+.landscape {
+    width: 6rem;
+}
+.writing {
+    width: 4rem;
+}
+.web {
+    width: 5rem;
+}
+/* END BOOK WIDTHS */
+
+/* TITLE SHADOWS */
+.book h1,
+h2,
+h3,
+h4,
+h5 {
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
+}
+.web .book h1,
+h3 {
+    text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.6);
+}
+/* END TITLE SHADOWS */
+
+/* DEFAULT BOOK ATTRIBUTES */
+.book {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset -0.35rem 0 0.5rem rgba(0, 0, 0, 0.4),
+    inset 0.35rem 0 0.5rem rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+}
+.contents {
+    opacity: 0;
+}
+/* END DEFAULT BOOK ATTRIBUTES */
+
+/* GRAPHIC DESIGN */
+.graphic .book {
+    align-items: center;
+    background: radial-gradient(
+            ellipse at top,
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.75)
+    ),
+    radial-gradient(ellipse at bottom, rgba(70, 70, 70, 0.5), transparent);
+    font-family: "Unica One", cursive;
+    color: darkorange;
+}
+/* END GRAPHIC DESIGN */
+
+/* DATA VISUALIZATION */
+.data .book {
+    background: radial-gradient(
+            ellipse at top,
+            rgba(50, 10, 87, 0.55),
+            rgba(0, 0, 0, 0.75)
+    ),
+    radial-gradient(ellipse at bottom, rgba(70, 70, 70, 0.5), transparent);
+    font-family: "Smooch Sans", sans-serif;
+    color: rgb(221, 206, 206);
+}
+/* END DATA VISUALIZATION */
+
+/* PHOTOGRAPHY */
+.photo .book {
+    background: radial-gradient(
+            ellipse at top,
+            rgba(189, 147, 189, 0.55),
+            rgba(0, 0, 0, 0.85)
+    ),
+    radial-gradient(ellipse at bottom, rgba(185, 154, 154, 0.5), transparent);
+    font-family: "Nothing You Could Do", cursive;
+    color: #212121;
+}
+/* END PHOTOGRAPHY */
+
+/* LANDSCAPE DESIGN */
+.landscape .book {
+    background: radial-gradient(
+            ellipse at top,
+            rgba(2, 95, 18, 0.55),
+            rgba(0, 0, 0, 0.75)
+    ),
+    radial-gradient(ellipse at bottom, rgba(70, 70, 70, 0.5), transparent);
+    font-family: "Fredericka the Great", cursive;
+    color: rgb(247, 229, 192);
+}
+/* END LANDSCAPE DESIGN */
+
+/* CREATIVE WRITING */
+.writing .book {
+    background: radial-gradient(
+            ellipse at top,
+            rgba(94, 15, 6, 0.76),
+            rgba(0, 0, 0, 0.75)
+    ),
+    radial-gradient(ellipse at bottom, rgba(70, 70, 70, 0.5), transparent);
+    font-family: "Lora", serif;
+    color: rgb(216, 191, 191);
+}
+/* END CREATIVE WRITING */
+
+/* WEB DESIGN */
+.web .book {
+    background: radial-gradient(
+            ellipse at top,
+            rgba(255, 255, 255, 0.63),
+            rgba(0, 0, 0, 0.75)
+    ),
+    radial-gradient(ellipse at bottom, rgba(70, 70, 70, 0.5), transparent);
+    font-family: "Inconsolata", monospace;
+    color: #333;
+}
+/* END WEB DESIGN */
+
+/* OPEN BOOK */
+.book-bg.active {
+    box-shadow: 0 0.5rem 3rem -0.5rem rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 61rem;
+    height: 32rem;
+    margin-top: -22px;
+    z-index: 10;
+    border-top-width: 0;
+}
+.contents {
+    display: flex;
+    position: absolute;
+}
+.book-bg.active .contents {
+    background-color: antiquewhite;
+    position: fixed;
+    opacity: 100;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border-left-style: double;
+    border-right-style: double;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-color: rgb(92, 92, 92);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: antiquewhite;
+    border-bottom-style: groove;
+    border-bottom-color: rgb(155, 153, 153);
+    border-bottom-width: 2px;
+    color: #333;
+    writing-mode: horizontal-tb;
+    font-family: "Nothing You Could Do", cursive;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 160px);
+    height: calc(100% - 20px);
+    margin: 10px;
+    align-items: center;
+}
+
+.fa-heart{
+    font-size: 30px;
+    z-index: 2000;
+    transition: .3s scale;
+}
+
+.fa-heart:active{
+    color: #f50805;
+}
+
+.fa-heart:hover{
+    scale: 1.2;
+}
+
+.page h1,
+h3 {
+    text-shadow: none;
+    font-family: 'Marck Script', cursive;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+pre{
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 18px;
+    margin: 0;
+}
+
+.pre2{
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 18px;
+    margin: 30px 0 0 0;
+}
+.is-grid {
+    display: grid;
+    gap: 5px;
+    grid-template: "1fr 1fr 1fr" "1fr 1fr 1fr" "1fr 1fr 1fr";
+}
+.illus {
+    border: 5px solid white;
+    flex: 1;
+    background-size: cover;
+}
+
+.page-shading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+            to right,
+            rgba(30, 30, 30, 0.1),
+            transparent 25%,
+            transparent 30%,
+            rgba(30, 30, 30, 0.3) 48%,
+            rgba(30, 30, 30, 0.4) 50%,
+            transparent 50%,
+            rgba(30, 30, 30, 0.3) 70%,
+            transparent
+    );
+}
+.book-bg.active .book-shading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+            to right,
+            transparent,
+            transparent 43%,
+            rgba(30, 30, 30, 0.3) 44%,
+            rgba(30, 30, 30, 0.5) 45%,
+            rgba(30, 30, 30, 0.4) 50%,
+            rgba(30, 30, 30, 0.65) 55%,
+            rgba(30, 30, 30, 0.3) 56%,
+            transparent 57%,
+            transparent
+    );
+}
+/* END OPEN BOOK */
+
+/* BACK ARROW */
+#back svg {
+    position: absolute;
+    border: none;
+    width: 2rem;
+    right: 0.25rem;
+    top: 0.125rem;
+    z-index: 10;
+    opacity: 85%;
+    filter: drop-shadow(0px 0px 2px black);
+}
+#back svg:hover {
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 2px whitesmoke);
+}
+/* BACK ARROW */
+
+#back0 svg {
+    position: absolute;
+    border: none;
+    width: 2rem;
+    right: 0.25rem;
+    top: 0.125rem;
+    z-index: 10;
+    opacity: 85%;
+    filter: drop-shadow(0px 0px 2px black);
+}
+#back0 svg:hover {
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 2px whitesmoke);
+}
+
+#back1 svg {
+    position: absolute;
+    border: none;
+    width: 2rem;
+    right: 0.25rem;
+    top: 0.125rem;
+    z-index: 10;
+    opacity: 85%;
+    filter: drop-shadow(0px 0px 2px black);
+}
+#back1 svg:hover {
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 2px whitesmoke);
+}
+
+#back2 svg {
+    position: absolute;
+    border: none;
+    width: 2rem;
+    right: 0.25rem;
+    top: 0.125rem;
+    z-index: 10;
+    opacity: 85%;
+    filter: drop-shadow(0px 0px 2px black);
+}
+#back2 svg:hover {
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 2px whitesmoke);
+}
+
+#back3 svg {
+    position: absolute;
+    border: none;
+    width: 2rem;
+    right: 0.25rem;
+    top: 0.125rem;
+    z-index: 10;
+    opacity: 85%;
+    filter: drop-shadow(0px 0px 2px black);
+}
+#back3 svg:hover {
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 2px whitesmoke);
+}
+
+#back4 svg {
+    position: absolute;
+    border: none;
+    width: 2rem;
+    right: 0.25rem;
+    top: 0.125rem;
+    z-index: 10;
+    opacity: 85%;
+    filter: drop-shadow(0px 0px 2px black);
+}
+#back4 svg:hover {
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 2px whitesmoke);
+}
+
+#back5 svg {
+    position: absolute;
+    border: none;
+    width: 2rem;
+    right: 0.25rem;
+    top: 0.125rem;
+    z-index: 10;
+    opacity: 85%;
+    filter: drop-shadow(0px 0px 2px black);
+}
+#back5 svg:hover {
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 2px whitesmoke);
+}
+
+.swal2-title{
+    text-shadow: none;
+}
+
+
+
+
+
+@media (max-width: 1085px) {
+    .book-bg.active {
+        width: 50rem;
+        height: 30rem;
+    }
+    .page h1,
+    h3 {
+        font-size: 20px;
+    }
+
+    pre{
+        font-size: 18px;
+    }
+
+    .pre2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 995px) {
+    .float{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 910px) {
+    .hide{
+        display: none;
+    }
+
+    .book-bg.active {
+        width: 40rem;
+        height: 27rem;
+    }
+
+    .page h1,
+    h3 {
+        font-size: 18px;
+    }
+
+    pre{
+        font-size: 14px;
+    }
+
+    .pre2{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 818px) {
+    .h2{
+        font-size: 30px;
+    }
+    .M{
+        font-size: 30px;
+    }
+
+    .book-bg {
+        height: 22rem;
+    }
+
+    .book-bg.active {
+        width: 32rem;
+        height: 22rem;
+    }
+
+    .book-bg.active .contents {
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+    }
+
+    .page h1,
+    h3 {
+        font-size: 18px;
+    }
+
+    pre{
+        font-size: 12px;
+    }
+
+    .pre2{
+        font-size: 12px;
+    }
+
+    .page {
+        width: calc(100% - 250px);
+    }
+}
+
+@media (max-width: 609px) {
+    .float{
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .img_wrapper{
+        position: relative;
+        width: 100%;
+        height: 350px;
+    }
+    .img{
+        background-position: top;
+        background-size: 80%;
+    }
+    .t{
+        font-size: 18px;
+    }
+    .fa-reply{
+        font-size: 18px;
+    }
+    ol {
+        &::before {
+        }
+        > li {
+            font-size: 14px;
+            &::before {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .fa-reply:hover{
+        background-size: 245px 2px;
+    }
+
+    .book-bg.active {
+        width: 28rem;
+        height: 22rem;
+    }
+
+    .page h1,
+    h3 {
+        font-size: 16px;
+    }
+
+    pre{
+        font-size: 10px;
+    }
+
+    .pre2{
+        font-size: 10px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .page {
+        width: calc(100% - 220px);
+    }
+
+    .fa-heart{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 507px) {
+    .float{
+        font-size: 18px;
+    }
+
+    .h2{
+        font-size: 24px;
+    }
+    .M{
+        font-size: 24px;
+    }
+    .book-bg.active {
+        width: 26rem;
+        height: 20rem;
+    }
+
+    .page h1,
+    h3 {
+        font-size: 15px;
+    }
+
+    pre{
+        font-size: 9px;
+    }
+
+    .pre2{
+        font-size: 9px;
+    }
+
+    .page {
+        width: calc(100% - 200px);
+    }
+}
+
+@media (max-width: 465px) {
+    .book-bg.active {
+        width: 24rem;
+        height: 20rem;
+    }
+
+    .page h1,
+    h3 {
+        font-size: 14px;
+    }
+
+    pre{
+        font-size: 8px;
+    }
+
+    .pre2{
+        font-size: 8px;
+    }
+    .page {
+        width: calc(100% - 190px);
+    }
+}
+
+@media (max-width: 442px) {
+    .book-bg.active {
+        width: 23rem;
+        height: 20rem;
+    }
+
+    .page h1,
+    h3 {
+        font-size: 14px;
+    }
+
+    pre{
+        font-size: 8px;
+    }
+
+    .pre2{
+        font-size: 8px;
+    }
+    .page {
+        width: calc(100% - 180px);
+    }
+}
+
+@media (max-width: 420px) {
+    .book-bg.active {
+        width: 21rem;
+        height: 17rem;
+    }
+
+    .page h1,
+    h3 {
+        font-size: 12px;
+    }
+
+    pre{
+        font-size: 7px;
+    }
+
+    .pre2{
+        font-size: 7px;
+    }
+    .page {
+        width: calc(100% - 170px);
+    }
+}
+
+@media (max-width: 394px) {
+    .book-bg.active {
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .page h1,
+    h3 {
+        font-size: 12px;
+    }
+
+    pre{
+        font-size: 6px;
+    }
+
+    .pre2{
+        font-size: 6px;
+    }
+    .page {
+        width: calc(100% - 160px);
+    }
+}
+
